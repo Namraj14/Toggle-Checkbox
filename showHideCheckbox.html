@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Show/Hide Content Message Based Checkbox" icon-name="custom:custom14">
+        <lightning-input type="Checkbox" label="Show/Hide Content" name="showHideContent"  onchange={toggleContent}></lightning-input>
+        <template if:true={checked}>
+            <p>Checked</p>
+        </template>
+        <template if:false={checked}>
+            <p>Unchecked</p>
+        </template>
+    </lightning-card>
+</template>
